@@ -15,7 +15,7 @@ const Navbar = () => {
     return (
         <header>
             <nav>
-                <a href={`${import.meta.env.VITE_APP_WEBSITE}`} className={styles.logo}>
+                <a href="https://i4m-r4vi.vercel.app/" className={styles.logo}>
                     Ravi <span>Shankar</span>
                 </a>
              
