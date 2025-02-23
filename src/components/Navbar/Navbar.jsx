@@ -15,7 +15,7 @@ const Navbar = () => {
     return (
         <header>
             <nav>
-                <a href="https://i4m-r4vi.netlify.app/" className={styles.logo}>
+                <a href={`${import.meta.env.VITE_APP_WEBSITE}`} className={styles.logo}>
                     Ravi <span>Shankar</span>
                 </a>
              
