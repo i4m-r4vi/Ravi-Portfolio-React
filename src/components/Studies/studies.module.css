@@ -1,0 +1,58 @@
+.studies {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #170550;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.studies>h2 {
+    padding-top: 14px;
+    position: relative;
+}
+
+.studies>h2::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.studies>h2>span {
+    font-family: "poppins", sans-serif;
+    font-size: 24px;
+    color: #F86F03;
+}
+
+.studies_list {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.studies_list li {
+    position: relative;
+    list-style: none;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+.studies_list li::before {
+    content: url("bx-book-alt.svg");
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: -16px;
+    top: 5px;
+}
+
+
+

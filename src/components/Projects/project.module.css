@@ -1,0 +1,169 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+    background-color: #31065A;
+}
+
+.projects h2 {
+    color: white;
+    margin-top: 10px;
+    position: relative;
+}
+
+.projects h2::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.project_container>div {
+    max-width: 100%;
+    border-radius: 25px;
+}
+
+.project_container>div>a,
+.project_container>div>a>img {
+    border-radius: 25px;
+}
+
+.project_items {
+    height: 40vh;
+    margin-left: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.project_items img {
+    height: 100%;
+    width: 400px;
+}
+
+.project3 {
+    grid-column: 1 / 3;
+    justify-self: center;
+}
+
+.project1 {
+    position: relative;
+}
+
+.project1>a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    border-radius: 20px;
+    left: 0px;
+    background-color: rgba(173, 91, 251, 0.6);
+    display: none;
+}
+
+.project1>a::before {
+    content: url(./images/Vector.png);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    z-index: 1;
+    left: 45%;
+    top: 50%;
+    display: none;
+}
+
+.project1>a:hover::after,
+.project1>a:hover::before {
+    display: block;
+}
+
+.project2 {
+    position: relative;
+}
+
+.project2>a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    border-radius: 20px;
+    left: 0px;
+    background-color: rgba(173, 91, 251, 0.6);
+    display: none;
+}
+
+.project2>a::before {
+    content: url(./images/Vector.png);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    z-index: 1;
+    left: 45%;
+    top: 50%;
+    display: none;
+}
+
+.project2>a:hover::after,
+.project2>a:hover::before {
+    display: block;
+}
+
+
+.project3 {
+    position: relative;
+}
+
+.project3>a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    border-radius: 20px;
+    left: 0px;
+    background-color: rgba(173, 91, 251, 0.6);
+    display: none;
+}
+
+.project3>a::before {
+    content: url(./images/Vector.png);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    z-index: 1;
+    left: 45%;
+    top: 50%;
+    display: none;
+}
+
+.project3>a:hover::after,
+.project3>a:hover::before {
+    display: block;
+}
+
+.more_project {
+    display: block;
+    margin: auto;
+    grid-column: 1/3;
+    z-index: 1;
+    padding-bottom: 10px;
+}
+
+.more_project a {
+    text-decoration: none;
+    color: #170550;
+    background-color: white;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 50px;
+    position: relative;
+    top: 20px;
+}

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&family=Sigmar+One&display=swap');
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #170550;
+    padding: 16px 0px;
+    align-items: center;
+}
+
+.logo{
+    font-family: "Pacifico", cursive;
+    font-size: 20px;
+}
+
+.logo>span {
+    color: #F86F03;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+nav li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    bottom: 0%;
+    left: 0%;
+    margin-bottom: -2px;
+    transition: 0.4s ease-in;
+}
+
+nav li a:hover::after {
+    width: 100%;
+}
+
+nav li {
+    display: inline-flex;
+    padding: 0px 10px;
+}
+
+#nav_icon {
+    display: none;
+}
+
+.hire a {
+    background-color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: #170550;
+}
+.hire_btn2 {
+    background-color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: #170550;
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .hire a {
+        display: none;
+    }
+
+    .banner_image {
+        display: none;
+    }
+
+    .text {
+        text-align: center;
+        max-width: 70%;
+        line-height: 1.7;
+    }
+
+    #nav_icon {
+        display: block;
+        color: white;
+        font-size: 20px;
+    }
+
+    .down_cv {
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .hire_btn2 {
+        display: inline-block;
+        width: fit-content;
+        margin-top: 20px;
+    }
+
+    nav {
+        position: relative;
+        display: flex;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 100%;
+        bottom: 0%;
+        right: 0%;
+        display: none;
+        flex-direction: column;
+        width: 40%;
+        height: 100vh;
+        background-color: rgb(23, 5, 80, 0.9);
+        padding: 20px;
+        animation-name: nav_ani;
+        animation-duration: 0.5s;
+        z-index: 1;
+    }
+
+    @keyframes nav_ani {
+        0% {
+            right: -20%;
+        }
+    }
+
+    .navon {
+        display: flex;
+    }
+
+    nav li::after {
+        content: ">";
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        color: white;
+    }
+
+    nav li {
+        margin-top: 10px;
+        position: relative;
+        padding-left: 20px;
+    }
+}
