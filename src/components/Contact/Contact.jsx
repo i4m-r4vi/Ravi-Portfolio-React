@@ -35,29 +35,28 @@ const Contact = () => {
             <div className={`${styles.contact_container}`}>
                 <div className={`${styles.mails}`}>
                     <p className='flex items-center '>
-                        <div className='mr-2'>
+                        <span className='mr-2'>
                             <FaMobileAlt />
-                        </div>
+                        </span>
                         +91 8344563311</p>
                     <p className='flex items-center'>
-                        <div className='mr-2'>
+                        <span className='mr-2'>
                             <FaEnvelope />
-                        </div>
+                        </span>
                         ravishankar.23ucsc@sonacas.edu.in</p>
                     <p className='flex items-center'>
-                        <div className='mr-2'>
+                        <span className='mr-2'>
                             <FaAddressBook />
-                        </div>
+                        </span>
                         Angammal Colony,Salem-9</p>
                 </div>
 
-                <form className={`${styles.formss}`} onSubmit={handleSubmit}  id="formss">
+                <form className={`${styles.formss} `} onSubmit={handleSubmit}  id="formss">
                     <input name="name" type="text" placeholder="Full Name" value={formData.name} onChange={handleChange} size="50"/>
                     <input name="email"type="text" placeholder="Email Address" value={formData.email} onChange={handleChange}/>
                     <input name="phone" placeholder="Phone Number" value={formData.phone} onChange={handleChange}/>
                     <textarea name="message" placeholder="Your Message" rows="5" cols="40"value={formData.message} onChange={handleChange} ></textarea>
                     <button type="submit" className={`${styles.btn}`}>{status?<CircularProgress size="20px" sx={{color:"white"}}/>:"Submit"}</button>
-                    
                 </form>
                 
             </div>

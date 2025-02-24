@@ -24,8 +24,8 @@ const HeroContent = () => {
           };
     }, [])
     return (
-        <div className={`${styles.banner_container}`}>
-            <div className={`${styles.text}`} data-aos="fade-down" data-aos-duration="10000">
+        <div className={`${styles.banner_container} lg:container bg-[#31065A] h-screen flex mx-auto text-white items-center`}>
+            <div className={`${styles.text} py-36 ml-auto lg:w-1/3`} data-aos="fade-down" data-aos-duration="10000">
                 <p className={`${styles.hi1}`}>Hi, It's me</p>
                 <h2 className={`${styles.h1} font-bold text-2xl`}>RAVI SHANKAR</h2>
                 <p>And I'm a <span className={`${styles.position}`} ref={spanText} /></p>
@@ -37,10 +37,7 @@ const HeroContent = () => {
                 </div>
                 <a href="https://drive.google.com/file/d/1F1TUX_rMTNQNIX8yFlWpe2a4toY1ZMnE/view?usp=sharing" target='_blank' className={`${styles.down_cv}`}>Download CV</a>
             </div>
-
-            <div className={`${styles.banner_image}`} data-aos="fade-up">
-
-            </div>
+            <img src="Bannerimage.png" alt="" className="hidden lg:block mr-auto" data-aos="fade-up"/>
         </div>
     )
 }

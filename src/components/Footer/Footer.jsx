@@ -7,9 +7,9 @@ const Footer = () => {
     return (
         <footer className={`${styles.lastline}`}>
             <p className='flex items-center justify-center'>
-                <div className='mr-2'>
+                <span className='mr-2'>
                     <FaHeart fill='red'></FaHeart>
-                </div> 
+                </span> 
                 Designed By <span className={`${styles.span} ml-1`}>Ravishankar</span>
             </p>
         </footer>

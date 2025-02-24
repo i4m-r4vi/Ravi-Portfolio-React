@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 *{
-    padding: 0%;
-    margin: 0%;
-    height: auto;
-    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 .typed-cursor {

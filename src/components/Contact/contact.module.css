@@ -25,7 +25,6 @@
 
 .contact_container {
     display: flex;
-    height: 50vh;
     gap: 170px;
     align-items: center;
     justify-content: center;
