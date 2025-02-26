@@ -3,7 +3,7 @@ import styles from './About.module.css'
 
 const About = () => {
   return (
-    <div className={`${styles.about} lg:container mx-auto`} id='about'>
+    <div className={`${styles.about} mx-auto`} id='about'>
       <h2 className='font-bold text-2xl text-center py-4'>About <span className={`${styles.me}`}>Me</span></h2>
       <div className={`block lg:flex items-center py-20 lg:py-10 lg:h-screen `}>
         <div className={`${styles.about_img} lg:w-1/2 m-auto `}>
