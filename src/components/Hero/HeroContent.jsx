@@ -24,7 +24,7 @@ const HeroContent = () => {
           };
     }, [])
     return (
-        <div className={`${styles.banner_container} xl:w-screen lg:container bg-[#31065A] h-screen flex mx-auto text-white items-center`}>
+        <div className={`${styles.banner_container} w-full lg:container bg-[#31065A] h-screen flex mx-auto text-white items-center`}>
             <div className={`${styles.text} py-36 ml-auto lg:w-1/3`} data-aos="fade-down" data-aos-duration="10000">
                 <p className={`${styles.hi1}`}>Hi, It's me</p>
                 <h2 className={`${styles.h1} font-bold text-2xl`}>RAVI SHANKAR</h2>
