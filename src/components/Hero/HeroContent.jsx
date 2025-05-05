@@ -35,7 +35,7 @@ const HeroContent = () => {
                     <a href="https://www.instagram.com/cyber_r4vi/" target="_blank"><FaInstagram className={`${styles.i}`} /></a>
                     <a href="https://x.com/cyber_r4vi" target="_blank"><FaXTwitter className={`${styles.i}`} /></a>
                 </div>
-                <a href="https://drive.google.com/file/d/1F1TUX_rMTNQNIX8yFlWpe2a4toY1ZMnE/view?usp=sharing" target='_blank' className={`${styles.down_cv}`}>Download CV</a>
+                <a href="https://drive.google.com/file/d/1MyooosR7pXbijamoFMyATGi3x3YJGyqG/view" target='_blank' className={`${styles.down_cv}`}>Download CV</a>
             </div>
             <img src="Bannerimage.png" alt="" className="hidden lg:block mr-auto" data-aos="fade-up"/>
         </div>
